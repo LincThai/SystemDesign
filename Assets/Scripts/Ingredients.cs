@@ -4,9 +4,8 @@ using UnityEngine;
 
 namespace SystemDesign.CraftingSystem
 {
-    public class Items : ScriptableObject
+    public class Ingredients : Items
     {
-        public string Name;
-        public string Description;
+        
     }
 }
