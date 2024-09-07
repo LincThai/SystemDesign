@@ -6,6 +6,7 @@ namespace SystemDesign.CraftingSystem
 {
     public class Ingredients : Items
     {
-        
+        [Header("Ingredients")]
+        public string usageDescription;
     }
 }

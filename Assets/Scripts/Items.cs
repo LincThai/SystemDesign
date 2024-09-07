@@ -6,6 +6,7 @@ namespace SystemDesign.CraftingSystem
 {
     public class Items : ScriptableObject
     {
+        [Header("Items")]
         public string Name;
         public string Description;
     }
