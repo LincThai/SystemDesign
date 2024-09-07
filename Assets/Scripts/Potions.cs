@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace SystemDesign.CraftingSystem
 {
+    [CreateAssetMenu(fileName = "New Potion", menuName = "Item/Potion", order = 0)]
     public class Potions : Items
     {
         [Header("Potions")]

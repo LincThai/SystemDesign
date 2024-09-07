@@ -8,6 +8,7 @@ namespace SystemDesign.CraftingSystem
     {
         [Header("Items")]
         public string Name;
+        [TextArea(1, 10)]
         public string Description;
     }
 }
