@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ef3dc09db8b204ea58c24b282b7daf, type: 3}
   m_Name: HealhPotion
   m_EditorClassIdentifier: 
-  Name: 
-  Description: 
+  Name: Health Potion
+  Description: Heals player for 1000Hp
+  thumnail: {fileID: 0}
   recipes: []
-  effects: 0
+  effects: 1

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc303b0f62216c646bfe5385b6a724e1, type: 3}
   m_Name: LifeDewLotus
   m_EditorClassIdentifier: 
-  Name: 
-  Description: 
-  usageDescription: 
+  Name: Life Dew Lotus
+  Description: Filled with the essence of life from the world tree. This herb is
+    found in lakes filled with strong life energy from the world tree's roots.
+  thumnail: {fileID: 0}
+  usageDescription: If combined with other herbs creates a potent health potion.
