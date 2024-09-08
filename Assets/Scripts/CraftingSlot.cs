@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class CraftingSlot : MonoBehaviour
+namespace SystemDesign.CraftingSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    public class CraftingSlot : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // set variables
+        // the item
+        public Items item;
+        // the thumbnail
+        public Image thumbnail;
     }
 }
