@@ -13,10 +13,25 @@ namespace SystemDesign.CraftingSystem
         public CraftingSlot[] craftingSlots;
         // results slot
         public CraftingSlot resultsSlot;
+        // reference to item that is clicked and dragged
+        private Items currentItem;
         
         // list of given ingredients in the slots
         public List<Items> ingredients;
         // list of results (Potions). This also contains the recipe in the scriptable object
         public List<Items> potions;
+
+        public void Update()
+        {
+            
+        }
+
+        public void CheckCompletedRecipes()
+        {
+            foreach (Items items in potions)
+            {
+
+            }
+        }
     }
 }

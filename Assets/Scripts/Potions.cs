@@ -9,7 +9,7 @@ namespace SystemDesign.CraftingSystem
     public class Potions : Items
     {
         [Header("Potions")]
-        public Ingredients[] recipes = new Ingredients[0];
+        public Ingredients[] recipe = new Ingredients[0];
         public Effects effects;
 
         [Flags]
