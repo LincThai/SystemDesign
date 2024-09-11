@@ -30,7 +30,7 @@ namespace SystemDesign.CraftingSystem
         {
             foreach (Items items in potions)
             {
-
+                //if ()
             }
         }
     }
