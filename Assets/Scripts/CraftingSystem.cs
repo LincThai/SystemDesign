@@ -19,18 +19,33 @@ namespace SystemDesign.CraftingSystem
         // list of given ingredients in the slots
         public List<Items> ingredients;
         // list of results (Potions). This also contains the recipe in the scriptable object
-        public List<Items> potions;
+        public List<Potions> potions;
 
         public void Update()
         {
-            
+            if (Input.GetMouseButtonDown(0)) 
+            {
+                if (currentItem != null)
+                {
+                    
+                }
+            }
         }
 
         public void CheckCompletedRecipes()
         {
-            foreach (Items items in potions)
+            // system.linq
+            foreach (Potions potion in potions)
             {
-                //if ()
+                for (int i = 0; i < potion.recipe.Length; i++)
+                {
+                    int index = 0;
+                    if (potion.recipe[i] == craftingSlots[index].item)
+                    {
+                    }
+                    else 
+                    { index++; }
+                }
             }
         }
     }
