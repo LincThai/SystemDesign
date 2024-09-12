@@ -6,10 +6,10 @@ using UnityEngine;
 namespace SystemDesign.CraftingSystem
 {
     [CreateAssetMenu(fileName = "New Potion", menuName = "Item/Potion", order = 0)]
-    public class Potions : Items
+    public class Potion : Item
     {
         [Header("Potions")]
-        public Ingredients[] recipe = new Ingredients[0];
+        public Ingredient[] recipe = new Ingredient[0];
         public Effects effects;
 
         [Flags]

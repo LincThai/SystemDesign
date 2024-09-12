@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace SystemDesign.CraftingSystem
 {
-    public class Items : ScriptableObject
+    public class Item : ScriptableObject
     {
         [Header("Items")]
         public string Name;
         [TextArea(1, 10)]
         public string Description;
-        public Sprite thumnail;
+        public Sprite thumbnail;
     }
 }

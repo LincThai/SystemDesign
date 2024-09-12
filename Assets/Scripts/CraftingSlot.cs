@@ -9,7 +9,7 @@ namespace SystemDesign.CraftingSystem
     {
         // set variables
         // the item
-        public Items item;
+        public Item item;
         // the thumbnail
         public Image thumbnail;
     }
