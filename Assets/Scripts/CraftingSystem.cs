@@ -53,8 +53,6 @@ namespace SystemDesign.CraftingSystem
                             nearestSlot = slot;
                         }
                     }
-                    // enable slot
-                    nearestSlot.gameObject.SetActive(true);
                     // override the thumbnail sprite with the thumbnail in the item
                     nearestSlot.thumbnail.sprite = currentItem.thumbnail;
                     // set the item in the nearestSlot to the currentItem
@@ -126,11 +124,11 @@ namespace SystemDesign.CraftingSystem
         {
             // set the item in the slot to null
             slot.item = null;
+            // current thumbnail set to null
+            slot.thumbnail = null;
             // set the ingredient in the slot to null in the list
             ingredients[slot.slotIndex] = null;
 
-            // turn off the slot
-            //slot.gameObject.SetActive(false);
             // call function to check for completed recipes
             CheckCompletedRecipes();
         }

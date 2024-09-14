@@ -315,7 +315,7 @@ MonoBehaviour:
   - {fileID: 8981107820425414599}
   - {fileID: 1210428906}
   - {fileID: 1478932052}
-  resultsSlot: {fileID: 1747425020}
+  resultsSlot: {fileID: 0}
   customCursor: {fileID: 1529864387}
   ingredients: []
   potions:
@@ -1046,6 +1046,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4251727575967628492, guid: 004675ce3836af74c9664489999dad14, type: 3}
+      propertyPath: slotIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251727575967628492, guid: 004675ce3836af74c9664489999dad14, type: 3}
       propertyPath: thumbnail
       value: 
       objectReference: {fileID: 1210428905}
@@ -1196,7 +1200,7 @@ PrefabInstance:
     - target: {fileID: 4912878179740193954, guid: e83a5a8f3de78b846afc9cc836dcc7b4, type: 3}
       propertyPath: ingredient
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 98e943ded1c248d48a651b13e3b93a43, type: 2}
     - target: {fileID: 7515593446758346303, guid: e83a5a8f3de78b846afc9cc836dcc7b4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1302,6 +1306,10 @@ PrefabInstance:
     - target: {fileID: 1555890444340087262, guid: 004675ce3836af74c9664489999dad14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251727575967628492, guid: 004675ce3836af74c9664489999dad14, type: 3}
+      propertyPath: slotIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4251727575967628492, guid: 004675ce3836af74c9664489999dad14, type: 3}
       propertyPath: thumbnail
@@ -1828,17 +1836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1747425020 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4251727575967628492, guid: 004675ce3836af74c9664489999dad14, type: 3}
-  m_PrefabInstance: {fileID: 1747425017}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe5541e7026cc647820e34f5b01fb40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1799195276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1942,7 +1939,7 @@ PrefabInstance:
     - target: {fileID: 4912878179740193954, guid: e83a5a8f3de78b846afc9cc836dcc7b4, type: 3}
       propertyPath: ingredient
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f90f80d5e507b4c449a866e60a6dfa9c, type: 2}
     - target: {fileID: 7515593446758346303, guid: e83a5a8f3de78b846afc9cc836dcc7b4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2064,7 +2061,7 @@ PrefabInstance:
     - target: {fileID: 4912878179740193954, guid: e83a5a8f3de78b846afc9cc836dcc7b4, type: 3}
       propertyPath: ingredient
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0c084508cc3628a429886ec6fa006ef9, type: 2}
     - target: {fileID: 7515593446758346303, guid: e83a5a8f3de78b846afc9cc836dcc7b4, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

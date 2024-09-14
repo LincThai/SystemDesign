@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Health Potion
   Description: Heals player for 1000Hp
-  thumnail: {fileID: 0}
-  recipe: []
+  thumbnail: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  recipe:
+  - {fileID: 11400000, guid: fd2a7d501b1ec994bb31947371d32c71, type: 2}
+  - {fileID: 11400000, guid: 98e943ded1c248d48a651b13e3b93a43, type: 2}
+  - {fileID: 11400000, guid: 0c084508cc3628a429886ec6fa006ef9, type: 2}
   effects: 1
