@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SystemDesign.CraftingSystem
@@ -7,7 +8,7 @@ namespace SystemDesign.CraftingSystem
     public class Potion : Item
     {
         [Header("Potions")]
-        public Ingredient[] recipe = new Ingredient[0];
+        public List<Ingredient> recipe = new List<Ingredient>();
         public Effects effects;
 
         [Flags]

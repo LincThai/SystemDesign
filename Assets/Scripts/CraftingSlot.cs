@@ -7,7 +7,9 @@ namespace SystemDesign.CraftingSystem
     {
         // set variables
         // the item
-        public Item item;
+        public Ingredient item;
+        // slot number
+        public int slotIndex;
         // the thumbnail
         public Image thumbnail;
     }

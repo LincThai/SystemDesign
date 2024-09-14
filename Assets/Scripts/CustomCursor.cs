@@ -8,7 +8,7 @@ namespace SystemDesign.CraftingSystem
     {
         private void Awake()
         {
-            // follow mouse position
+            // set it so the custom cursur appears with the mouse in the exact same position
             transform.position = Input.mousePosition;
         }
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using SystemDesign.CraftingSyatem;
 
 namespace SystemDesign.CraftingSystem
 {
@@ -14,15 +16,15 @@ namespace SystemDesign.CraftingSystem
         // Array for crafting slots (UI)
         public CraftingSlot[] craftingSlots;
         // results slot
-        public CraftingSlot resultsSlot;
+        public ResultsSlot resultsSlot;
         // reference to item that is clicked and dragged
-        private Item currentItem;
+        private Ingredient currentItem;
         // Custom Cursor
         public Image customCursor;
-        
+
         // list of given ingredients in the slots
-        public List<Item> ingredients;
-        // list of results (Potions). This also contains the recipe in the scriptable object
+        public List<Ingredient> ingredients;
+        // list of results (Potions). This also contains the recipe array in the scriptable object
         public List<Potion> potions;
 
         public void Update()
@@ -57,26 +59,52 @@ namespace SystemDesign.CraftingSystem
                     nearestSlot.thumbnail.sprite = currentItem.thumbnail;
                     // set the item in the nearestSlot to the currentItem
                     nearestSlot.item = currentItem;
-                    // set the current item to null meaning ther is nothing there
+                    // add item to ingredient list
+                    ingredients[nearestSlot.slotIndex] = currentItem;
+                    // set the current item to null meaning there is nothing there
                     currentItem = null;
+
+                    // call function to check for the completed recipes
+                    CheckCompletedRecipes();
                 }
             }
         }
 
         public void CheckCompletedRecipes()
         {
-            // system.linq
+            // set variable for the outcome of this check 
+            // this is the result that is the output
+            Item outcome = null;
+
+            // for each potion in the postions list
             foreach (Potion potion in potions)
             {
-                for (int i = 0; i < potion.recipe.Length; i++)
+                // int variable to check the number of matching ingredients
+                int matchs = 0;
+                List<Ingredient> recipe = potion.recipe;
+
+                // for every item in this array
+                for (int i = 0; i < recipe.Count; i++)
                 {
-                    int index = 0;
-                    if (potion.recipe[i] == craftingSlots[index].item)
+                    // check if the order of the recipe in the array is the same in the crafting slots
+                    if (recipe[i] = ingredients[i])
                     {
+                        // increase the number of matchs
+                        matchs++;
                     }
-                    else 
-                    { index++; }
+                    else
+                    {
+                        // go back to the start of this loop
+                        return;
+                    }
                 }
+
+                if (matchs == craftingSlots.Length)
+                {
+                    outcome = potion;
+                }
+                // place item (outcome) into the results slot
+                resultsSlot.item = outcome;
             }
         }
 
@@ -98,8 +126,11 @@ namespace SystemDesign.CraftingSystem
         {
             // set the item in the slot to null
             slot.item = null;
+            // set the ingredient in the slot to null in the list
+            ingredients[slot.slotIndex] = null;
+
             // turn off the slot
-            slot.gameObject.SetActive(false);
+            //slot.gameObject.SetActive(false);
             // call function to check for completed recipes
             CheckCompletedRecipes();
         }
