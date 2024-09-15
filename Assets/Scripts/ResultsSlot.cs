@@ -4,7 +4,7 @@ using SystemDesign.CraftingSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SystemDesign.CraftingSyatem
+namespace SystemDesign.CraftingSystem
 {
     public class ResultsSlot : MonoBehaviour
     {
