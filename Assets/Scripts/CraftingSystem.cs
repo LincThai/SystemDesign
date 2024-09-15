@@ -77,6 +77,7 @@ namespace SystemDesign.CraftingSystem
                 {
                     // reduce matches
                     matchs--;
+                    Debug.Log("matchs reduced");
                     // reset bool
                     slotIsCleared = false;
                 }
