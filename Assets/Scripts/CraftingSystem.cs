@@ -60,7 +60,7 @@ namespace SystemDesign.CraftingSystem
                         matchs++;
                         Debug.Log(matchs);
                         // check if it goes iver the maximum
-                        if (matchs >= craftingSlots.Length)
+                        if (matchs > craftingSlots.Length)
                         {
                             matchs = craftingSlots.Length;
                         }

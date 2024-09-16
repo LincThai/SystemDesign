@@ -5,8 +5,10 @@ namespace SystemDesign.CraftingSystem
 {
     public class IngredientSlot : MonoBehaviour
     {
-        // set variable to store
+        // set variables
+        // set variable to store the ingredient
         public Ingredient ingredient;
+        // reference to the UI image
         public Image thumbnail;
 
         private void Awake()

@@ -10,7 +10,7 @@ namespace SystemDesign.CraftingSystem
         public Ingredient item;
         // slot number
         public int slotIndex;
-        // the thumbnail
+        // the thumbnail UI image in canvas
         public Image thumbnail;
     }
 }
